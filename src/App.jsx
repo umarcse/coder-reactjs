@@ -4,6 +4,10 @@ import Body from "./components/Content/Body";
 import bodycontent from "./data/data";
 import Playbutton from "./components/Playbutton";
 import Todo from "./components/Todo/Todo";
+import Netflix from "./components/Netflix/Netflix";
+
+import moviedata from "./data/moviedata";
+//import Addmovie from "./components/Netflix/Addmovie";
 const App = () => {
  
   const handleClick = () =>{
@@ -21,8 +25,10 @@ const App = () => {
         </Body>)
       }
       </div> */}
+     
+      <Netflix fetchURL={moviedata.requestTopRated}/>
 
-      <Todo/>
+      {/* <Todo/> */}
       
       
     </>
